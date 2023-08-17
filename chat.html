@@ -268,49 +268,102 @@
     <section class="space-top space-extra-bottom">
         <div class="container">
             <div class="row gx-60 mx-auto justify-content-center">
-                <div class="col-lg-6">
-                    <div class="form-style4 login" data-bg-src="assets/img/bg/course-bg-pattern.jpg">
-                        <h2 class="form-title text-center">Data Pasien</h2>
-                        <div class="form-group">
-                            <label for="name">Nama Pasien:</label>
-                            <input type="text" autocomplete="off" name="name" id="name"
-                                placeholder="Masukkan nama pasien">
-                        </div>
-                        <div class="form-group">
-                            <label for="born_year">Tanggal Lahir Pasien:</label>
-                            <input type="date" autocomplete="off" name="born_year" id="born_year">
-                        </div>
-                        <!-- radio gender -->
-                        <div class="form-group">
-                            <label for="gender">Gender:</label>
-                            <select name="gender" id="gender">
-                                <option value="male">Pria</option>
-                                <option value="female">Wanita</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="weight">Berat Badan:</label>
-                            <input type="text" autocomplete="off" name="weight" id="weight"
-                                placeholder="Masukkan nama pasien">
-                        </div>
-                        <div class="form-group">
-                            <label for="height">Tinggi Badan:</label>
-                            <input type="text" autocomplete="off" name="height" id="height"
-                                placeholder="Masukkan nama pasien">
-                        </div>
-                        <div class="form-group">
-                            <label for="pay">Bayar dengan:</label>
-                            <select name="pay" id="pay">
-                                <option value="bank">Bank</option>
-                                <option value="e-wallet">E-Wallet</option>
-                                <option value="credit">Kartu Kredit</option>
-                            </select>
-                        </div>
-                        <div class="row text-center">
-                            <button type="submit" class="vs-btn"
-                                onclick="window.location.href = 'login.html'">Lanjut Chat</button>
+                <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
+
+                    <h5 class="font-weight-bold mb-3 text-center text-lg-start">Dokter</h5>
+
+                    <div class="card">
+                        <div class="card-body">
+
+                            <ul class="list-unstyled mb-0">
+                                <li class="p-2 border-bottom" style="background-color: #eee;">
+                                    <a href="#!" class="d-flex justify-content-between">
+                                        <div class="d-flex flex-row">
+                                            <img src="/assets/img/about/testimonial_doctor.png"
+                                                alt="avatar"
+                                                class="rounded-circle d-flex align-self-center me-3 shadow-1-strong"
+                                                width="60">
+                                            <div class="pt-1">
+                                                <p class="fw-bold mb-0">Moniqa</p>
+                                                <p class="small text-muted">Lorem ipsum dolor sit amet...</p>
+                                            </div>
+                                        </div>
+                                        <div class="pt-1">
+                                            <p class="small text-muted mb-1">Baru Saja</p>
+                                            <!-- <span class="badge bg-danger float-end">1</span> -->
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-7 col-xl-8">
+
+                    <ul class="list-unstyled">
+                        <li class="d-flex justify-content-between mb-4">
+                            <img src="/assets/img/about/testimonial_doctor.png" alt="avatar"
+                                class="rounded-circle d-flex align-self-start me-3 shadow-1-strong" width="60">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between p-3">
+                                    <p class="fw-bold mb-0">Moniqa</p>
+                                    <p class="text-muted small mb-0"><i class="far fa-clock"></i> 12 mins ago</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex justify-content-between mb-4">
+                            <div class="card w-100">
+                                <div class="card-header d-flex justify-content-between p-3">
+                                    <p class="fw-bold mb-0">User</p>
+                                    <p class="text-muted small mb-0"><i class="far fa-clock"></i> 13 mins ago</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-0">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque
+                                        laudantium.
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp" alt="avatar"
+                                class="rounded-circle d-flex align-self-start ms-3 shadow-1-strong" width="60">
+                        </li>
+                        <li class="d-flex justify-content-between mb-4">
+                            <img src="/assets/img/about/testimonial_doctor.png" alt="avatar"
+                                class="rounded-circle d-flex align-self-start me-3 shadow-1-strong" width="60">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between p-3">
+                                    <p class="fw-bold mb-0">Moniqa</p>
+                                    <p class="text-muted small mb-0"><i class="far fa-clock"></i> 10 mins ago</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bg-white mb-3">
+                            <div class="form-outline">
+                                <textarea class="form-control" id="textAreaExample2" rows="4"></textarea>
+                                <label class="form-label" for="textAreaExample2">Message</label>
+                            </div>
+                        </li>
+                        <button type="button" class="btn btn-info btn-rounded float-end">Send</button>
+                    </ul>
+
                 </div>
             </div>
         </div>
@@ -318,76 +371,81 @@
     <!--==============================
     Footer Area
   ==============================-->
-  <footer class="footer-wrapper footer-layout1">
-    <div class="shape-mockup jump d-none d-xxxl-block" data-bottom="0%" data-left="-270px">
-        <div class="vs-border-circle"></div>
-    </div>
-    <div class="widget-area">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-md-6 col-xl-auto">
-                    <div class="widget footer-widget">
-                        <div class="vs-widget-about">
-                            <div class="footer-logo"> <a href="index.html"><img src="assets/img/logo-white.svg" alt="logo"></a> </div>
-                            <h5>Layanan Pengaduan Konsumen</h5>
-                            <p class="footer-text">PT Media Dokter Investama
-                                Jl. H.R. Rasuna Said Kav B32-33, Jakarta Selatan
+    <footer class="footer-wrapper footer-layout1">
+        <div class="shape-mockup jump d-none d-xxxl-block" data-bottom="0%" data-left="-270px">
+            <div class="vs-border-circle"></div>
+        </div>
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget footer-widget">
+                            <div class="vs-widget-about">
+                                <div class="footer-logo"> <a href="index.html"><img src="assets/img/logo-white.svg"
+                                            alt="logo"></a> </div>
+                                <h5>Layanan Pengaduan Konsumen</h5>
+                                <p class="footer-text">PT Media Dokter Investama
+                                    Jl. H.R. Rasuna Said Kav B32-33, Jakarta Selatan
                                 </p>
-                            <p class="footer-info"><i class="fal fa-phone-alt"></i><a class="text-inherit" href="tel:++11234562228">021-3110-6999</a></p>
-                            <p class="footer-info"><i class="fal fa-envelope"></i><a class="text-inherit" href="mailto:info@example.com">help@obatin.com</a></p>
+                                <p class="footer-info"><i class="fal fa-phone-alt"></i><a class="text-inherit"
+                                        href="tel:++11234562228">021-3110-6999</a></p>
+                                <p class="footer-info"><i class="fal fa-envelope"></i><a class="text-inherit"
+                                        href="mailto:info@example.com">help@obatin.com</a></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-6 col-xl-auto">
-                    <div class="widget nav_menu footer-widget">
-                        <h3 class="widget_title">Site Map</h3>
-                        <div class="menu-all-pages-container footer-menu">
-                            <ul class="menu">
-                                <li><a href="">FAQ</a></li>
-                                <li><a href="">Blog</a></li>
-                                <li><a href="">Syarat & Ketentuan</a></li>
-                                <li><a href="">Kebijakan Privasi</a></li>
-                                <li><a href="">Promo</a></li>
-                            </ul>
+                    <div class="col-6 col-md-6 col-xl-auto">
+                        <div class="widget nav_menu footer-widget">
+                            <h3 class="widget_title">Site Map</h3>
+                            <div class="menu-all-pages-container footer-menu">
+                                <ul class="menu">
+                                    <li><a href="">FAQ</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Syarat & Ketentuan</a></li>
+                                    <li><a href="">Kebijakan Privasi</a></li>
+                                    <li><a href="">Promo</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-6 col-xl-auto">
-                    <div class="widget nav_menu footer-widget">
+                    <div class="col-6 col-md-6 col-xl-auto">
+                        <div class="widget nav_menu footer-widget">
 
-                        <div class="menu-all-pages-container footer-menu">
-                            <ul class="menu">
-                                <br>
-                                <br>
-                                <br>
-                                <li><a href="about.html">Karir</a></li>
-                                <li><a href="contact.html">Security</a></li>
-                                <li><a href="blog.html">Media</a></li>
-                                <li><a href="event-details.html">Corporate Partnership</a></li>
-                            </ul>
+                            <div class="menu-all-pages-container footer-menu">
+                                <ul class="menu">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <li><a href="about.html">Karir</a></li>
+                                    <li><a href="contact.html">Security</a></li>
+                                    <li><a href="blog.html">Media</a></li>
+                                    <li><a href="event-details.html">Corporate Partnership</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="copyright-wrap">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="text-center col-lg-auto">
-                    <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2023 <a href="index.html">Educino</a>. All Rights Reserved By <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <div class="social-style1">
-                        <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
-                        <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i>Linked In</a>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="text-center col-lg-auto">
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2023 <a
+                                href="index.html">Educino</a>. All Rights Reserved By <a
+                                href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="social-style1">
+                            <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+                            <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i>Linked In</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer> <!-- Scroll To Top -->
+    </footer> <!-- Scroll To Top -->
     <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
 
     <!--********************************
