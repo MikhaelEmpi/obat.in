@@ -190,7 +190,7 @@
   $('.vs-carousel').each(function () {
     var vsSlide = $(this);
 
-    // Collect Data 
+    // Collect Data
     function d(data) {
       return vsSlide.data(data);
     }
@@ -199,7 +199,7 @@
     var prevButton = '<button type="button" class="slick-prev"><i class="' + d('prev-arrow') + '"></i></button>',
       nextButton = '<button type="button" class="slick-next"><i class="' + d('next-arrow') + '"></i></button>';
 
-    // Function For Custom Arrow Btn 
+    // Function For Custom Arrow Btn
     $('[data-slick-next]').each(function () {
       $(this).on('click', function (e) {
         e.preventDefault()
@@ -405,6 +405,27 @@
   };
   popupSarchBox('.popup-search-box', '.searchBoxTggler', '.searchClose', 'show');
 
+  function popupFormBox($formBox, $formOpen, $formCls, $formToggleCls) {
+    $($formOpen).on('click', function (e) {
+      e.preventDefault();
+      $($formBox).addClass($formToggleCls);
+    });
+    $($formBox).on('click', function (e) {
+      e.stopPropagation();
+      $($formBox).removeClass($formToggleCls);
+    });
+    $($formBox).find('form').on('click', function (e) {
+      e.stopPropagation();
+      $($formBox).addClass($formToggleCls);
+    });
+    $($formCls).on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $($formBox).removeClass($formToggleCls);
+    });
+  };
+  popupFormBox('.popup-form-box', '.formBoxTggler', '.formClose', 'show');
+
 
   /*----------- 10. Magnific Popup ----------*/
   /* magnificPopup img view */
@@ -553,7 +574,7 @@
           return element < 10 ? '0' + element : element;
         }
 
-        // If the count down is over, write some text 
+        // If the count down is over, write some text
         if (distance < 0) {
           clearInterval(counter);
           $counter.addClass(exprireCls);
